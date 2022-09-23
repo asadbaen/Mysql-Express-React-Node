@@ -1,0 +1,31 @@
+GET http://localhost:8000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJhc2FkYmFlbiIsImVtYWlsIjoiYXNhZEBnbWFpbC5jb20iLCJpYXQiOjE2NjM5MTg1MDMsImV4cCI6MTY2MzkxODU2M30.4vo8ysduZRMDdCL1vh52EI-ZMSkZosEiS4EI7JqNMbU
+
+
+
+###
+POST http://localhost:8000/login
+Content-Type: application/json
+
+{
+    "email": "asad@gmail.com",
+    "password": "12345"
+}
+
+
+###
+POST http://localhost:8000/users
+Content-Type: application/json
+
+{
+    "name": "asadbaen",
+    "email": "asad@gmail.com",
+    "password": "12345",
+    "confPassword": "12345"
+}
+
+### 
+GET http://localhost:8000/token
+
+### 
+DELETE  http://localhost:8000/logout
