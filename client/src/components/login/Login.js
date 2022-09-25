@@ -25,9 +25,9 @@ const Login = () => {
   };
 
   return (
-    <section class="hero has-background-grey-light is-fullheight is-fullwidth">
-      <div class="hero-body">
-        <div class="container">
+    <section className="hero has-background-grey-light is-fullheight is-fullwidth">
+      <div className="hero-body">
+        <div className="container">
           <div className="columns is-centered">
             <div className="column is-4-desktop">
               <form onSubmit={Auth} className="box">
